@@ -1,4 +1,4 @@
-# 'smallhex.py' v1.0: Defines small (3x5) character-definitions for hexadecimal numbers.
+# 'smallhex.py' : Defines small (3x5) character-definitions for hexadecimal numbers.
 # Allows two-digit numbers to be displayed on the Raspberry Pi 'SenseHat' LED display. (8x8 pixels)
 # The file 'smallhex.txt' holds the definition of each character in a format like this:
 """
@@ -30,7 +30,7 @@ pixel_off=(0,0,0)
 
 max_width=8
 max_height=8
-char_defs=defaultdict(list) # Character Defintions held as a list of strings; compromised off 'on/off-chars'
+char_defs=defaultdict(list) # Character Defintions held as a list of strings; comprised of 'on/off-chars'
 
 def pad(line):
 	global pixel_off, max_width
