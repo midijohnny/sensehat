@@ -41,6 +41,12 @@ The UI is very responsive , (probably) due to the lightweight nature of MQTT.
 ![screenshot](https://github.com/midijohnny/sensehat/blob/master/mqtt-ipod.png)
 
 
+'mqtt_lights.py'
+================
+
+Simple subscriber (does not publish anything itself) that listens for messages and switches SenseHat LEDs on/off.
+
+
 
 
 
