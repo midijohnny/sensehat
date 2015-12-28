@@ -31,7 +31,14 @@ Needs an 'mqtt' broker: you can install 'mosquitto' on the Pi with:
 
 	sudo apt-get install mosquitto
 
-Note: the broker and the client can be run on different machines or the same machine - it doesn't matter.
+Note: the broker and the client can be run on different machines or the same machine.
+
+Screenshot: showing an iOS client (https://itunes.apple.com/us/app/zmqtt-utility/id737370079?mt=8) sending out MQTT messages
+and displaying the output.
+
+The UI is very responsive , (probably) due to the lightweight nature of MQTT.
+
+![screenshot](https://github.com/midijohnny/sensehat/blob/master/mqtt-ipod.png)
 
 
 
