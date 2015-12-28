@@ -13,7 +13,7 @@ broker="broker_pi" # change this to match your broker's IP or hostname
 broker_port=1883
 
 on=(0,255,0) 	# Green pixel for on
-off=(255,0,0)	# Red pixedl for off
+off=(255,0,0)	# Red pixel for off
 
 def on_connect(client, userdata, flags, rc):
 	sense.clear()
