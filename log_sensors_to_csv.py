@@ -12,7 +12,7 @@ with open(log_csv, 'wb') as csvfile:
 	sensor_writer=csv.writer( csvfile )
 	sensor_writer.writerow(["TIME", "TEMPERATURE", "HUMIDITY", "PRESSURE"])
 	sense=SenseHat()
-	for reading in range(0,max_reading):
+	for reading in range(0,max_readings):
 		dt=datetime.datetime.now()
 		sensor_writer.writerow(	[dt.strftime(dt_format),
 					sense.get_temperature(),
