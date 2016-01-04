@@ -46,7 +46,10 @@ The UI is very responsive , (probably) due to the lightweight nature of MQTT.
 
 Simple subscriber (does not publish anything itself) that listens for messages and switches SenseHat LEDs on/off.
 
-
+'log_sensors_to_csv.py'
+======================
+Writes date+sensor data to a 'CSV' file in a loop. 
+Loop will run for a fixed number of readings, pausing for a fixed number of secondsbetween readings.
 
 
 
