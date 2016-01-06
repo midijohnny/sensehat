@@ -56,7 +56,7 @@ Loop will run for a fixed number of readings, pausing for a fixed number of seco
 =============
 A 'painting' tool - runs a GUI (Tkinter) that lets you 'paint' in realtime onto the SenseHat LED matrix.
 
-Here's a screenshot showing a rudementary rudimentary of a smiling human face.
+Here's a screenshot showing a rudimentary representation of a smiling human face.
 
 ![screenshot](https://github.com/midijohnny/sensehat/blob/master/ledpainter.png)
 
