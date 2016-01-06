@@ -30,25 +30,46 @@ pixel_colours={ (255,255,255): 'white',
 		(0,0,248): 'blue' }
 
 on_pixel='blue'
+on_pixel='#ffffff'
 off_pixel='black'
 
+current_paint_brush=1
+paint_brushes=[]
+for r in range(0,2):
+	for g in range(0,2):
+		for b in range(0,2):
+			if r==0 and g==0 and b==0:
+				pass
+			else:
+				paint_brushes.append( (r*255,g*255,b*255) )
+
+eraser=(0,0,0)
+
 class Paint(object):
+	def key(self, event):
+		global current_paint_brush
+		if event.char==' ':
+			current_paint_brush+=1
+			if current_paint_brush==len(paint_brushes):
+				current_paint_brush=0
 
 	# Clear the pixel
 	def right_click(self,event):
 		x=event.x/self.x_step
 		y=event.y/self.y_step
-		self.sense.set_pixel(x,y, (0,0,0) )
+		self.sense.set_pixel(x,y, eraser )
 		w=event.widget.find_closest(event.x, event.y)
 		self.canvas.itemconfigure(w, fill=off_pixel)
 		
 	# 'Paint' the pixel
 	def left_click(self,event):
+		global current_paint_brush
+		global paint_brushes
 		x=event.x/self.x_step
 		y=event.y/self.y_step
-		self.sense.set_pixel(x,y, (0,0,255) )
+		self.sense.set_pixel(x,y, paint_brushes[current_paint_brush] )
 		w=event.widget.find_closest(event.x, event.y)
-		self.canvas.itemconfigure(w, fill=on_pixel)
+		self.canvas.itemconfigure(w, fill="#%02X%02X%02X"%(paint_brushes[current_paint_brush][0], paint_brushes[current_paint_brush][1], paint_brushes[current_paint_brush][2]))
 
 	def __init__(self, width=200, height=200):
 		global pixel_colours
@@ -78,6 +99,8 @@ class Paint(object):
 				self.canvas.tag_bind(p, '<B1-Motion>',self.left_click)
 				self.canvas.tag_bind(p, '<ButtonPress-3>',self.right_click)
 				self.canvas.tag_bind(p, '<B3-Motion>',self.right_click)
+		
+				self.root.bind("<Key>", self.key)
 		self.canvas.pack()	
 		self.root.mainloop()
 
