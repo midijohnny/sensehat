@@ -59,7 +59,7 @@ A 'painting' tool - runs a GUI (Tkinter) that lets you 'paint' in realtime onto 
 Here's a screenshot showing a rudimentary representation of a smiling human face. And then a photo showing the result of the SenseHat itself
 
 ![screenshot](https://github.com/midijohnny/sensehat/blob/master/ledpainter.png)
-![screenshot](https://github.com/midijohnny/sensehat/blob/master/senseface.png)
+![screenshot](https://github.com/midijohnny/sensehat/blob/master/senseface.jpg)
 
 
 
