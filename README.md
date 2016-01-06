@@ -61,5 +61,11 @@ Here's a screenshot showing a rudimentary representation of a smiling human face
 ![screenshot](https://github.com/midijohnny/sensehat/blob/master/ledpainter.png)
 ![screenshot](https://github.com/midijohnny/sensehat/blob/master/senseface.jpg)
 
+New ! Multi-coloured support - simply press SPACE to cycle through 7 fantastic colours !
+Also: you can hold down the mouse button to paint - as well as clicking individual pixels !
+
+![screenshot](https://github.com/midijohnny/sensehat/blob/master/ghost.png)
+![screenshot](https://github.com/midijohnny/sensehat/blob/master/senseghost.jpg)
+
 
 
