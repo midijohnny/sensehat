@@ -75,7 +75,9 @@ class Paint(object):
 				p=self.canvas.create_rectangle(x,y,x+self.x_step, y+self.y_step, outline='white', fill=fill_colour)
 				pixel_counter+=1
 				self.canvas.tag_bind(p, '<ButtonPress-1>',self.left_click)
+				self.canvas.tag_bind(p, '<B1-Motion>',self.left_click)
 				self.canvas.tag_bind(p, '<ButtonPress-3>',self.right_click)
+				self.canvas.tag_bind(p, '<B3-Motion>',self.right_click)
 		self.canvas.pack()	
 		self.root.mainloop()
 
