@@ -19,11 +19,11 @@ from Tkinter import *
 from sense_hat import SenseHat
 
 
-current_paint_brush=1
+current_paint_brush=0
 paint_brushes=[]
-for r in range(0,2):
+for b in range(0,2):
 	for g in range(0,2):
-		for b in range(0,2):
+		for r in range(0,2):
 			if r==0 and g==0 and b==0:
 				pass
 			else:
@@ -32,6 +32,13 @@ for r in range(0,2):
 eraser=(0,0,0)
 
 class Paint(object):
+
+	def motion(self, event):
+	#tbd: sense LED 'cursor'?
+		x,y=self.scale_sense_pixels(event.x,event.y)
+		old_value=self.sense.get_pixel(x,y)
+		print value
+
 	def key(self, event):
 		global current_paint_brush
 		if event.char==' ':
@@ -103,6 +110,7 @@ class Paint(object):
 				self.canvas.tag_bind(p, '<B3-Motion>',self.right_click)
 		
 				self.root.bind("<Key>", self.key)
+	#			self.root.bind("<Motion>", self.motion)
 		self.canvas.pack()	
 		self.root.mainloop()
 
