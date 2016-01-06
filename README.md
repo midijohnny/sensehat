@@ -52,5 +52,13 @@ Writes date+sensor data to a 'CSV' file in a loop.
 Loop will run for a fixed number of readings, pausing for a fixed number of secondsbetween readings.
 
 
+'ledpaint.py'
+=============
+A 'painting' tool - runs a GUI (Tkinter) that lets you 'paint' in realtime onto the SenseHat LED matrix.
+
+Here's a screenshot showing a rudementary rudimentary of a smiling human face.
+
+![screenshot](https://github.com/midijohnny/sensehat/blob/master/ledpainter.png)
+
 
 
