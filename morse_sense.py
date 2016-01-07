@@ -1,6 +1,6 @@
 # Just blinks morse code on the SenseHat.
 # For a small novelty you can blink the actual letters on the sense hat ('flash_letter'=True on the constructor).
-# Additionally: it is the only program I have written where I have had to pleasure of being able to name a method 'do_dah' and for name to be meaningful ! :-)
+# Additionally: it is the only program I have written where I have had to pleasure of being able to name a method 'do_dah' and for that name to be meaningful ! :-)
 #
 # I don't speak Morse, so I can't say whether the output it is actually discernable to anybody - although "SOS" looked about right !
 # Gets the definitions from a text file (default 'morse.txt')
