@@ -70,10 +70,10 @@ Also: you can hold down the mouse button to paint - as well as clicking individu
 'morse_sense.py'
 ================
 
-# Just blinks morse code on the SenseHat.
-# For a small novelty you can blink the actual letters on the sense hat ('flash_letter'=True on the constructor).
-# Additionally: it is the only program I have written where I have had to pleasure of being able to name a method 'do_dah' and for the name to be meaningful ! :-)
-#
-# I don't speak Morse, so I can't say whether the output it is actually discernable to anybody - although "SOS" looked about right !
-# Gets the definitions from a text file (default 'morse.txt', included)
+Just blinks morse code on the SenseHat.
+For a small novelty you can blink the actual letters on the sense hat ('flash_letter'=True on the constructor).
+Additionally: it is the only program I have written where I have had to pleasure of being able to name a method 'do_dah' and for the name to be meaningful ! :-)
+
+I don't speak Morse, so I can't say whether the output it is actually discernable to anybody - although "SOS" looked about right !
+Gets the definitions from a text file (default 'morse.txt', included)
 
